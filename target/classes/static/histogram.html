@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram Generator</title>
+    <link rel="stylesheet" href="/css/histogram.css">
+    <script src="/js/calculate.js" defer></script>
+</head>
+<body>
+    <h1>Histogram Generator</h1>
+    <div id="bounds">
+        <h2>Lower bounds</h2>
+        <form id="bounds_values">
+            <header>Max</header>
+                <input type="text" name="max" value="100.00" class="boundSection"><br>
+            <header>A+</header>
+                <input type="text" name="A+" value="95.00" class="boundSection"><br>
+            <header>A</header>
+                <input type="text" name="A" value="90.00" class="boundSection"><br>
+            <header>A-</header>
+                <input type="text" name="A-" value="85.00" class="boundSection"><br>
+            <header>B+</header>
+                <input type="text" name="B+" value="80.00" class="boundSection"><br>
+            <header>B</header>
+                <input type="text" name="B" value="75.00" class="boundSection"><br>
+            <header>B-</header>
+                <input type="text" name="B-" value="70.00" class="boundSection"><br>
+            <header>C+</header>
+                <input type="text" name="C+" value="65.00" class="boundSection"><br>
+            <header>C</header>
+                <input type="text" name="C" value="60.00" class="boundSection"><br>
+            <header>C-</header>
+                <input type="text" name="C-" value="55.00" class="boundSection"><br>
+            <header>D</header>
+                <input type="text" name="D" value="50.00" class="boundSection"><br>
+            <header>F  </header>
+                <input type="text" name="F" value="0.00" class="boundSection"><br>
+            <input type="button" name="changeBounds" value="Change Bounds"><br>
+        </form>
+    </div>
+    <div id="histogram">
+        <h3>Histogram</h3>
+        <table>
+            <tbody id="aPlusBody">
+                <tr>
+                    <th>A+</th>
+                    <td id="aPlusName"><span></span></td>
+                </tr>
+            </tbody>
+            <tbody id="aBody">
+                <tr>
+                    <th>A</th>
+                    <td id="aName"><span></span></td>
+                </tr>
+            </tbody>
+            <tbody id="aMinusBody">
+                <tr>
+                    <th>A-</th>
+                    <td id="aMinusName"><span></span></td>
+                </tr>
+            </tbody>
+            <tbody id="bPlusBody">
+                <tr>
+                    <th>B+</th>
+                    <td id="bPlusName"><span></span></td>
+                </tr>
+            </tbody>
+            <tbody id="bBody">
+                <tr>
+                    <th>B</th>
+                    <td id="bName"><span></span></td>
+                </tr>
+            </tbody>
+            <tbody id="bMinusBody">
+                <tr>
+                    <th>B-</th>
+                    <td id="bMinusName"><span></span></td>
+                </tr>
+            </tbody>
+            <tbody id="cPlusBody">
+                <tr>
+                    <th>C+</th>
+                    <td id="cPlusName"><span></span></td>
+                </tr>
+            </tbody>
+            <tbody id="cBody">
+                <tr>
+                    <th>C</th>
+                    <td id="cName"><span></span></td>
+                </tr>
+            </tbody>
+            <tbody id="cMinusBody">
+                <tr>
+                    <th>C-</th>
+                    <td id="cMinusName"><span></span></td>
+                </tr>
+            </tbody>
+            <tbody id="dBody">
+                <tr>
+                    <th>D</th>
+                    <td id="dName"><span></span></td>
+                </tr>
+            </tbody>
+            <tbody id="fBody">
+                <tr>
+                    <th>F</th>
+                    <td id="fName"><span></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="grade">
+        <form>
+            <strong>New Grade:</strong>
+            <input type="text" name="gradeInput" class="gradeSection">
+        </form>
+    </div>
+</body>
+</html>
